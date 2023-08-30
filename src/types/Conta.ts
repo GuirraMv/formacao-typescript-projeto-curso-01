@@ -85,6 +85,18 @@ export class Conta {
     }
 }
 
+export class ContaPremium extends Conta {
+    registrarTransacao(Transacao: Transacao): void {
+        if (Transacao.tipoTransacao === TipoTransacao.DEPOSITO) {
+            console.log("Ganhou um bônus");
+            Transacao.valor += 0.5;
+        }
+        super.registrarTransacao(Transacao);
+    }
+}
+
 const conta = new Conta("Joana da Silva Olveira");
+
+const contaPremium = new ContaPremium("Japoro");
 
 export default conta;

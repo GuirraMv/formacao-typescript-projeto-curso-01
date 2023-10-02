@@ -1,11 +1,9 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "outDir": "./dist/js/",
-        "noEmitOnError": true,
-        "experimentalDecorators": true
-    },
-    "include": [
-        "./src/**/*"
-    ]
+  "compilerOptions": {
+    "target": "ESNext",
+    "outDir": "./dist/js/",
+    "noEmitOnError": true,
+    "experimentalDecorators": true
+  },
+  "include": ["./src/**/*"]
 }
